@@ -13,6 +13,10 @@ header{
     
     
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 .nav{
     width: 85%;
     display: flex;
@@ -22,15 +26,21 @@ header{
     display: flex;
     gap: 20px;
 }
+.link-header:hover{
+    color: #A18A68;
+    border-bottom: 3px solid #A18A68;
+
+    transition: 0.3s;
+}
+
 .title-logo{
     font-size: 2rem;
     color: #A18A68;
     font-family: 'Allerta Stencil', sans-serif;
 
 }
-a{
-    text-decoration: none;
-    color: black;
+.title-logo:hover{
+    text-shadow: 0px 0px 3px grey;
 }
 
 /* footer */
@@ -46,7 +56,6 @@ a{
 .content p{
     margin-top: 200px;
     margin-left: 50px;
-    
 }
 
 .content{
@@ -92,6 +101,7 @@ a{
     justify-content: space-evenly;
 }
 .product-image{
+    border-radius: 10px;
     width: 340px;
     height: 340px;
 }
@@ -107,7 +117,29 @@ a{
     color: #A18A68;
     margin-top: 10px;
 }
+.hover-add-cart{
+    position: absolute;
+    width: 340px;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff3f;
+    height: 50px;
+    padding-top: 10px;
+    opacity: 0;
+}
+.card:hover .hover-add-cart{
+    opacity: 1;
+    transition: 0.4s;
 
+}
+.btn-checkout-cart:hover{
+    background-color:#28a745 ;
+    color: white;
+}
+.btn-checkout-cart:active{
+    color: beige;
+}
 
 /* ============================== about ==============================*/
 .section-about{
@@ -228,6 +260,21 @@ a{
     border: 2px solid black;
     border-radius: 10px;
 }
+#inc-btn-cart{
+    border-right: 2px solid black;
+}
+.btn-count{
+    font-weight: bold;
+    
+}
+.btn-count:hover{
+    background-color: #707070;
+    color: #fff;
+}
+.btn-count:active{
+    background-color: #484848;
+    color: #fff;
+}
 
 /* ===================================end cart ======================================*/
 
@@ -303,7 +350,31 @@ a{
   border: 2px solid black;
   border-radius: 8px;
   padding: 8px 15px 8px 15px;
+  font-size: 17px;
  }
+ .btn-grp-product button:hover{
+    transition: 0.3s;
+    background-color: #07da7b;
+ }
+ .btn-grp-product button:active{
+    transition: 0.2s;
+    background-color: #019251;
+ }
+ .btn-grp-product a{
+    background: none;
+    border: none;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 8px 15px 8px 15px;
+ }
+ .btn-grp-product a:hover{
+    transition: 0.3s;
+    background-color: #00a65a;
+    color: #fff;
+
+
+ }
+
 
 
  /* ===== reviews ====== */
@@ -371,9 +442,12 @@ a{
     justify-content: center;
     border-radius: 25px;
 }
-.card-checkout{
+.card-checkout {
     display: flex;
+    margin-bottom: 10px;
+    
 }
+
 .input-check{
     border: none;
     width: 70%;
@@ -395,6 +469,7 @@ a{
     font-size: 16px;
     padding-left: 35px;
 }
+
 .btn-send-reset{
     border: none;
     width: 25%;
@@ -403,9 +478,18 @@ a{
     color: #fff;
     border-radius: 20px;
     height: 50px;
-
-     
+    background-color: #d9534f;  
 }
+.btn-send-reset:hover{
+    background-color: #dc3545;
+    transition: 0.5s;
+}
+
+.btn-send-reset:active{ background-color: #a3001d;}
+
+.primary{background-color: #007bff; }
+.primary:hover{ background-color:#0056b3 ;}
+.primary:active{background-color: #004fa0;}
 .check-col-2{
     width: 50%;
     margin-left: 20px;
@@ -461,10 +545,7 @@ a{
 
 
 
-
-
 /* =================================== end  checkout ============================= */
-
 
 
 
@@ -493,6 +574,17 @@ footer{
     margin-left: 20px;
     color: #707070;
 }
+.link-footer:hover{
+    color: #484848;
+}
+
+.fa-brands{
+    color: #707070;
+}
+.fa-brands:hover{
+    color: #484848;
+}
+
 .footer-inner-2 p{
     border-bottom: 2px solid black;
     padding-bottom: 10px;

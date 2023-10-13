@@ -22,13 +22,13 @@
                 <a href="./index.html" class="title-logo">You<span style="color: #686AA1;">Shop</span></a>
             </div>
             <div class="links">
-                <a href="#">blog</a>
-                <a href="#">shop</a>
-                <a href="#">our story</a>
+                <a class="link-header" href="#">blog</a>
+                <a class="link-header" href="#">shop</a>
+                <a class="link-header" href="#">our story</a>
                 <p>|</p>
-                <a href="#"><i class="fa-solid fa-magnifying-glass" style="color: #000000;"></i></a>
-                <a href="./panier.html"><i class="fa-solid fa-cart-shopping" style="color: #000000;"></i></a>
-                <a href="#"><i class="fa-regular fa-user" style="color: #000000;"></i></a>
+                <a class="link-header" href="#"><i class="fa-solid fa-magnifying-glass" ></i></a>
+                <a class="link-header" href="./panier.html"><i class="fa-solid fa-cart-shopping" ></i></a>
+                <a class="link-header" href="#"><i class="fa-regular fa-user" ></i></a>
             </div>
         </div>
     </header>
@@ -43,6 +43,7 @@
     
       <main class="main-checkout">
         <div class="all-checkout">
+            <!-- section 1 -->
             <section class="check-col-1" style="text-align: center;">
                 
                 <form >
@@ -57,14 +58,15 @@
                     </div>
 
                     <div style="text-align: center;">
-                        <input class="btn-send-reset" type="submit" value="Place Order" style="background-color: #548AF7;">
-                         <input class="btn-send-reset" type="reset" value="reset" style="background-color: #d9534f;">
+                        <input class="btn-send-reset primary" type="submit" value="Place Order">
+                         <input class="btn-send-reset danger" type="reset" value="reset">
                     </div>
                     
                   </form>
 
             </section>
             <section class="check-col-2">
+                <!-- cart-1 -->
                 <div class="card-checkout">
                     <img src="./images/prod.png" class="image-checkout-cart" alt="" width="140px" height="150px">
 
@@ -81,6 +83,23 @@
 
                     </div>
                 </div>
+                 <!-- cart 2 -->
+                <div class="card-checkout">
+                    <img src="./images/prod.png" class="image-checkout-cart" alt="" width="140px" height="150px">
+
+                    <div class="cart-checkout-content">
+                        <div class="card-checkout-ttl-price">
+                            <p>product title</p>
+                            <p class="text-right">$ 20.00</p>
+                        </div>
+                        <div class="card-checkout-Qty-price">
+                            <p>Qty : 2 </p>
+                            <p class="text-right"> $100.00</p>
+                        </div>
+                        
+                    </div>
+                </div>
+
                 <div>
                     <div class="total-general-checkout">
                         <span class="text-total-checkout"><p>Subtotal</p><p>$300.00</p></span>
@@ -91,6 +110,9 @@
                 </div>
 
             </section>
+
+
+            <!-- sec -->
 
         </div>
 
