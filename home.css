@@ -611,6 +611,10 @@ footer{
     padding-bottom: 30px;
     
 }
+.send-email{
+    border: none;
+    padding: 5px 1px 5px 1px;
+}
 
 
 
