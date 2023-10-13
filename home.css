@@ -468,7 +468,16 @@ a{
     border-radius: 20px;
     font-size: 16px;
     padding-left: 35px;
+    padding-right: 5px;
 }
+.position-p{
+    position: absolute;
+    top: 483px;
+   left: 240px;
+   font-size: 11px;
+   opacity: 70%;
+ }
+ 
 
 .btn-send-reset{
     border: none;
@@ -602,7 +611,6 @@ footer{
     padding-bottom: 30px;
     
 }
-
 
 
 

@@ -48,16 +48,20 @@
                 
                 <form >
                     
-                    <input class="input-check" type="text" id="name" name="name" value="" placeholder="Nom et prenom..."><br>
-                    <input class="input-check" type="text" id="adress" name="adress" value="" placeholder="adress..."><br>
-                    <input class="input-check" type="text" id="number-card" name="credit" value="" placeholder="Card number..."><br>
+                    <input class="input-check" type="text" id="name" name="name"  placeholder="Nom et prenom..." required><br>
+                    <input class="input-check" type="text" id="adress" name="adress"  placeholder="adress..."required><br>
+                    <input class="input-check" type="email" id="adress" name="adress"  placeholder="email..." required><br>
+                    <input class="input-check" type="number" id="adress" name="adress"  placeholder="telephone..." required><br>
+                    <input class="input-check" type="number" id="number-card" name="credit"  placeholder="Card number..." required ><br>
 
                     <div style="text-align: center;">
-                        <input class="input-grp-check" type="text" id="exp-date" name="exp-date" value="" placeholder="Exp date...">
-                        <input class="input-grp-check"  type="text" id="cvv" name="cvv" value="" placeholder="CVV..."> 
+                        <p class="position-p">date expiration</p><br>
+                        <input class="input-grp-check" type="date" id="exp-date" name="exp-date"  placeholder="Exp date... d/m/y" required>
+                        <input class="input-grp-check"  type="text" id="cvv" name="cvv" placeholder="CVV..." required> 
                     </div>
-
+                    
                     <div style="text-align: center;">
+                        
                         <input class="btn-send-reset primary" type="submit" value="Place Order">
                          <input class="btn-send-reset danger" type="reset" value="reset">
                     </div>
